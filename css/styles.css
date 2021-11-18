@@ -64,6 +64,8 @@ a.footer-logo {
 .header-nav-link,
 .header-contacts-link {
   color: var(--second-color--);
+  display: inline-flex;
+  align-items: center;
 
   font-weight: 500;
   line-height: 1.14;
@@ -113,26 +115,12 @@ a.footer-logo {
   border-bottom: 1px solid #ececec;
 }
 
-.header-contacts-link::before {
-  content: '';
-  display: inline-block;
+.icon-post,
+.icon-tel {
   margin-right: 10px;
-  background-size: contain;
-  cursor: pointer;
-  object-position: center;
+  fill: currentColor;
 }
 
-.icon-post::before {
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/icons/envelope.svg);
-}
-
-.icon-tel::before {
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/icons/smartphone.svg);
-}
 /* -----------------------------------------------------HERO---------------------------------------------------------------- */
 
 .hero {
@@ -175,7 +163,7 @@ a.footer-logo {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/hero.jpg);
   background-size: cover;
   background-position: center;
@@ -211,30 +199,13 @@ a.footer-logo {
   margin-right: 30px;
 }
 
-.advant-item::before {
-  content: '';
-  display: block;
+.thumb {
+  display: flex;
   height: 120px;
   margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--background-btn-color--);
-}
-
-.icon-antenna::before {
-  background-image: url(../images/icons/antenna\ 1.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/icons/clock\ 1.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/icons/diagram\ 1.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/icons/astronaut\ 1.svg);
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------------------------------------------------ЧЕМ МЫ ЗАНИМАЕМСЯ---------------------------------------------------------- */
