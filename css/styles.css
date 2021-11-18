@@ -6,6 +6,7 @@
   --accent-color--: #2196f3;
   --background-color--: #2f303a;
   --background-btn-color--: #f5f4fa;
+  --svg-color--: #afb1b8;
 }
 body {
   color: var(--main-color--);
@@ -259,6 +260,7 @@ a.footer-logo {
 
 .team-item-text {
   color: var(--main-color--);
+  margin-bottom: 16px;
 }
 
 .team-item {
@@ -281,6 +283,32 @@ a.footer-logo {
 .team-item-info {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.social-media-item:hover {
+  background-color: var(--accent-color--);
+  border-radius: 50%;
+}
+.icon {
+  fill: var(--svg-color--);
+}
+
+.icon:hover {
+  fill: #fff;
 }
 
 /* --------------------------------------------------------FOOTER-------------------------------------------------------------------- */
