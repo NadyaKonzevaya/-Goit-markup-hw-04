@@ -212,22 +212,27 @@ a.footer-logo {
 /* ---------------------------------------------------ЧЕМ МЫ ЗАНИМАЕМСЯ---------------------------------------------------------- */
 
 .work,
-.team {
+.team,
+.partners {
   padding-bottom: 94px;
 }
 
 .work-title,
-.team-title {
+.team-title,
+.partners-title {
   margin-bottom: 50px;
 
   color: var(--second-color--);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.work-list {
+.work-list,
+.team-list,
+.partners-list {
   display: flex;
 }
 
@@ -245,9 +250,6 @@ a.footer-logo {
   padding-top: 94px;
 }
 
-.team-list {
-  display: flex;
-}
 .team-item-title,
 .team-item-text {
   color: var(--second-color--);
@@ -315,12 +317,49 @@ a.footer-logo {
   height: 20px;
 }
 
-.link:hover,
-.link:focus {
+.social-media-link:hover,
+.social-media-link:focus {
   background-color: var(--accent-color--);
 
   color: #fff;
 }
+
+/* --------------------------------------------------------PARTNERS------------------------------------------------------------------ */
+.partners {
+  padding-top: 94px;
+}
+
+.partners-item + .partners-item {
+  margin-left: 30px;
+}
+
+.partners-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--svg-color--);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.partners-media-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--svg-color--);
+}
+
+.partners-media-icon {
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
+}
+
+.partners-media-link:hover,
+.partners-media-link:focus {
+  border: 1px solid var(--accent-color--);
+  color: var(--accent-color--);
 
 /* --------------------------------------------------------FOOTER-------------------------------------------------------------------- */
 
