@@ -336,14 +336,14 @@ a.footer-logo {
 .partners-item {
   width: 170px;
   height: 92px;
-  border: 1px solid var(--svg-color--);
   box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .partners-media-link {
   width: 100%;
   height: 100%;
+  border: 1px solid var(--svg-color--);
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -360,6 +360,7 @@ a.footer-logo {
 .partners-media-link:focus {
   border: 1px solid var(--accent-color--);
   color: var(--accent-color--);
+}
 
 /* --------------------------------------------------------FOOTER-------------------------------------------------------------------- */
 
