@@ -291,24 +291,35 @@ a.footer-logo {
 }
 
 .social-media-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-media-item + .social-media-item {
+  margin-left: 10px;
+}
+
+.social-media-link {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-}
-
-.social-media-item:hover {
-  background-color: var(--accent-color--);
+  color: var(--svg-color--);
   border-radius: 50%;
 }
-.icon {
-  fill: var(--svg-color--);
+
+.social-media-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
 }
 
-.icon:hover {
-  fill: #fff;
+.link:hover,
+.link:focus {
+  background-color: var(--accent-color--);
+
+  color: #fff;
 }
 
 /* --------------------------------------------------------FOOTER-------------------------------------------------------------------- */
