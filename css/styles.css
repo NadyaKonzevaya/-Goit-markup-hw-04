@@ -392,9 +392,6 @@ a.footer-logo {
 .container-footer {
   display: flex;
   align-items: baseline;
-  justify-content: start;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-media-title {
